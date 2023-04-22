@@ -2,13 +2,13 @@
     "name": "notes",
     "version": "1.0.0",
     "description": "",
-    "main": "/opt/render/project/src/server.js",
+    "main": "/src/index.js",
     "engines": {
         "node": ">=16"
     },
     "scripts": {
-        "start": "node src/server.js",
-        "dev": "nodemon src/server.js"
+        "start": "node src/index.js",
+        "dev": "nodemon src/index.js"
     },
     "keywords": [],
     "author": "",
