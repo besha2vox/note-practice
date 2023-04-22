@@ -2,9 +2,10 @@ const { Schema, model } = require('mongoose');
 
 const { handleSaveError } = require('../../helpers');
 
-// const commentSchema = new Schema({
-//     comment: String,
-// });
+const commentSchema = new Schema({
+    text: String,
+    author: String,
+});
 
 const noteSchema = new Schema(
     {
@@ -26,7 +27,7 @@ const noteSchema = new Schema(
             type: Number,
             default: 0,
         },
-        // comments: [commentSchema],
+        comments: [commentSchema],
         stared: {
             type: Boolean,
             default: false,
