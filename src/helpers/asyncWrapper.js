@@ -1,5 +1,3 @@
-const { default: Error } = require('next/error');
-
 const asyncWrapper = (ctrl) => {
     return async (req, res, next) => {
         try {
